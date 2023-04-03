@@ -1,0 +1,71 @@
+/* Set font and background color */
+body {
+  font-family: 'Poppins';
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+/* Center the content vertically and horizontally */
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+h1 {
+  font-size: 4em;
+  margin-bottom: 0.5em;
+}
+
+p {
+  font-size: 1.2em;
+  text-align: center;
+  margin: 0 0 1em;
+}
+
+/* Style the search form */
+form {
+  display: flex;
+  justify-content: center;
+  margin: 1em 0;
+}
+
+input[type="text"] {
+  padding: 0.5em;
+  border: 2px solid #ccc;
+  border-radius: 3px;
+  font-size: 1.2em;
+}
+
+button[type="submit"] {
+  padding: 0.5em 1em;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  font-size: 1.2em;
+  margin-left: 0.5em;
+}
+
+/* Style the popular pages list */
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 0.5em;
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+a:hover {
+  text-decoration: underline;
+}

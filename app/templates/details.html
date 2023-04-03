@@ -1,53 +1,41 @@
-<!DOCTYPE html>
-<html lang="pt-BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% extends 'base.html' %}
 
-        <link rel="shortcut icon" href="./src/images/favicon.ico" type="image/x-icon">
+{% block others %}
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/css/styles_2.css') }}">
+{% endblock others %}
 
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap" rel="stylesheet">
+{% block responsive %}
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/responsive/responsive_2.css') }}">
+{% endblock responsive %}
 
-        <link rel="stylesheet" href="./src/css/reset.css">
-
-         <link rel="stylesheet" href="./src/css/styles.css">
-
-         <link rel="stylesheet" href="./src/css/responsive.css">
-
-        <title>Super Mario Bros - Detalhes do Filme</title>
-    </head>
-    <body>
-
-        <div class="fundo-video">
+    {% block title %}Super Mario Bros - Movie Details{% endblock %}
+    {% block content %}
+        <div class="bg-video">
             <video class="video" autoplay loop muted>
-                <source src="./src/video/video-mario.mp4" type="video/mp4">
+                <source src="{{ url_for('static', filename='video/video-mario.mp4') }}" type="video/mp4">
             </video>
         </div> 
 
-        <header class="cabecalho">
+        <header class="header">
             <a>
                 <img class="logo" 
-            src="./src/images/logo-chapeu-mario.png" alt="logo-chapeu-mario"> 
+            src="{{ url_for('static', filename='images/logo-mario-hat.png') }}" alt="logo-mario-hat"> 
             </a>
             <nav>
                 <ul class="menu">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Detalhes</a></li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/details.html">Detalhes</a></li>
                 </ul>
             </nav>
         </header>
         <main class="container">
-            <div class="informacoes">
+            <div class="infos">
                 <h1>Super Mario Bros - Detalhes do Filme</h1>
-                <p class="descricao">Mario é um encanador junto com o seu irmão Luigi. Um dia, eles vão parar no reino dos cogumelos, governado pela Princesa Peach, mas ameaçada pelo rei dos Koopas, que faz de tudo para conseguir reinar em todos os lugares. O filme é baseado no popular jogo de videogame da Nintendo, Super Mario Bros.</p>
-                <a href="#">Saiba mais sobre o filme</a>
+                <p class="description">Mario é um encanador junto com o seu irmão Luigi. Um dia, eles vão parar no reino dos cogumelos, governado pela Princesa Peach, mas ameaçada pelo rei dos Koopas, que faz de tudo para conseguir reinar em todos os lugares. O filme é baseado no popular jogo de videogame da Nintendo, Super Mario Bros.</p>
+                <a href="https://www.thesupermariobros.movie/">Saiba mais sobre o filme</a>
             </div>
-                <img class="imagem-fundo" src="./src/images/mario-fundo.jpg"/>
+                <img class="bg-image" src="{{ url_for('static', filename='images/super-mario-chars.png') }}"/>
         </main>
 
-        <script src="./src/js/index.js"></script>
-    </body>
-</html>
+        <script src="{{ url_for('static', filename='script/js/index.js') }}"></script>
+    {% endblock %}

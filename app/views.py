@@ -5,3 +5,8 @@ def index():
 
 def details():
     return render_template('details.html')
+
+def not_found_404():
+    return render_template('404.html')
+
+

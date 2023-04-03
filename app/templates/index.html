@@ -1,5 +1,17 @@
 {% extends 'base.html' %}
 
+{% block others %}
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/css/styles_1.css') }}">
+{% endblock others %}
+
+{% block responsive %}
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/responsive/responsive_1.css') }}">
+{% endblock responsive %}
+
+{% block reset %}
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/reset/reset.css') }}">
+{% endblock reset %}
+
 {% block title %}Super Mario Bros - Movie{% endblock %}
 
 {% block content %}

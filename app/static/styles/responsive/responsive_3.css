@@ -1,0 +1,35 @@
+@media (max-width: 1200px) {
+    /* Reduce the size of the main content area */
+    .container {
+      max-width: 100%;
+      padding: 20px;
+    }
+  
+    /* Increase the size of the title image */
+    .title-image {
+      max-width: 80%;
+      margin: 0 auto;
+    }
+  
+    /* Center the Mario image */
+    .Mario {
+      max-width: 100%;
+      margin: 20px 0;
+    }
+  }
+
+@media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .infos {
+      flex-basis: 100%;
+      text-align: center;
+    }
+  
+    .Mario {
+      max-width: 80%;
+    }
+  }

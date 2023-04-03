@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block title %}404 Page Not Found{% endblock %}
+
+{% block content %}
+
+    <h1>Oops!</h1>
+    <p>We can't seem to find the page you're looking for.</p>
+    <p>Please check the URL or use the navigation menu to find what you're looking for.</p>
+
+    <form action="/search" method="get">
+        <input type="text" name="q" placeholder="Search...">
+        <button type="submit">Search</button>
+    </form>
+
+    <p>Or, try one of these popular pages:</p>
+
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About Us</a></li>
+        <li><a href="/contact">Contact Us</a></li>
+    </ul>
+
+{% endblock %}
