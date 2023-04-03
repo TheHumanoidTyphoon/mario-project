@@ -4,7 +4,7 @@
     }
 
 
-    .fundo-video {
+    .bg-video {
         display: none;
     }
 
@@ -19,28 +19,28 @@
         max-width: 50%;
     }
 
-    .container .informacoes {
+    .container .infos {
         display: flex;
         align-items: center;
         flex-direction: column;
     }
 
-    .container .descricao {
+    .container .description {
         color: #ffffff;
         text-align: center;
     }
 
-    .container .botao-trailer {
+    .container .trailer-button {
         background-color: #263238;
     }
 }
 
 @media (max-width: 700px) {
-    .cabecalho .logo {
+    .header .logo {
         justify-content: center;
     }
     
-    .container .imagem-titulo {
+    .container .title-image {
         width: 325px;
         height: auto;
     }
@@ -51,7 +51,7 @@
         padding: 40px 0px 0px;
     }
 
-    .modal .fechar-modal {
+    .modal .close-modal {
         width: 30px;
         line-height: 30px;
     } 

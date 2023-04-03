@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block title %}Super Mario Bros - Movie{% endblock %}
+
+{% block content %}
+
+
+        <div class="bg-video">
+            <video class="video" autoplay loop muted>
+                <source src="{{ url_for('static', filename='video/video-mario.mp4') }}" type="video/mp4">
+            </video>
+        </div> 
+
+        {% include 'header.html' %}
+        <main class="container">
+            <div class="infos">
+                <img class="title-image" src="{{ url_for('static', filename='images/title.png') }}" alt="movie title image">
+                <p class="description">Skilled plumbers, Mario and Luigi, are transported to the Mushroom Kingdom, a fantastical world with talking mushrooms, mischievous turtles, and a princess named Peach. Their arrival coincides with the ruthless Koopa King's rise to power, who aims to conquer the kingdom and take Peach as his own. Mario and Luigi must use their wits, courage, and tools to save the day and restore peace to the land.</p>
+                <button class="trailer-button">Watch the trailer</button>
+            </div>
+                <img class="Mario" src="{{ url_for('static', filename='images/super-mario-chars.png') }}"/>
+              
+            <div class="modal">
+                <div class="modal-content">
+                    <span class="close-modal">X</span>
+                    <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/Cb4WV4aXBpk" title="Official Trailer" frameborder="1" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+        </main>
+
+        <script src="{{ url_for('static', filename='script/js/index.js') }}"></script>
+      
+{% endblock %}
