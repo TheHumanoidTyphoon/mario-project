@@ -1,15 +1,15 @@
-const botaoTrailer = document.querySelector(".trailer-button");  
-const botaoFecharModal = document.querySelector(".close-modal");
+const trailerButton = document.querySelector(".trailer-button");  
+const closeModalButton = document.querySelector(".close-modal");
 const video = document.getElementById("video");
 const modal = document.querySelector(".modal");
-const linkDoVideo = video.src;
+const videoLink = video.src;
 
-botaoTrailer.addEventListener("click", () => {
+trailerButton.addEventListener("click", () => {
     modal.classList.toggle("open");
-    video.setAttribute("app", linkDoVideo);
+    video.setAttribute("app", videoLink);
 });
 
-botaoFecharModal.addEventListener("click", () => {
+closeModalButton.addEventListener("click", () => {
     modal.classList.toggle("open");
     video.setAttribute("app", "");
 });

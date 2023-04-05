@@ -149,7 +149,8 @@ body {
 footer {
     position: bottom;
     padding: -20px;
-    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-family: 'Poppins', sans-serif;
     text-align: center;
     color: white;
   }
