@@ -1,7 +1,7 @@
 {% extends 'base.html' %}
 
 {% block others %}
-<link rel="stylesheet" href="{{ url_for('static', filename='styles/css/styles_1.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/css/style_1.css') }}">
 {% endblock others %}
 
 {% block responsive %}
@@ -23,7 +23,7 @@
             </video>
         </div> 
 
-        {% include 'header.html' %}
+        {% include 'partials/header.html' %}
         <main class="container">
             <div class="infos">
                 <img class="title-image" src="{{ url_for('static', filename='images/title.png') }}" alt="movie title image">

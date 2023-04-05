@@ -1,12 +1,16 @@
 {% extends 'base.html' %}
 
 {% block others %}
-<link rel="stylesheet" href="{{ url_for('static', filename='styles/css/styles_2.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/css/style_2.css') }}">
 {% endblock others %}
 
 {% block responsive %}
 <link rel="stylesheet" href="{{ url_for('static', filename='styles/responsive/responsive_2.css') }}">
 {% endblock responsive %}
+
+{% block reset %}
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/reset/reset.css') }}">
+{% endblock reset %}
 
     {% block title %}Super Mario Bros - Movie Details{% endblock %}
     {% block content %}
@@ -16,27 +20,23 @@
             </video>
         </div> 
 
-        <header class="header">
-            <a>
-                <img class="logo" 
-            src="{{ url_for('static', filename='images/logo-mario-hat.png') }}" alt="logo-mario-hat"> 
-            </a>
-            <nav>
-                <ul class="menu">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/details.html">Detalhes</a></li>
-                </ul>
-            </nav>
-        </header>
+        {% include 'partials/header.html' %}
         <main class="container">
             <div class="infos">
                 <h1>The Super Mario Bros. Movie</h1>
-                <p class="description">A new animated film based on the iconic world of Super Mario Bros is coming from Illumination and Nintendo. Directed by Aaron Horvath and Michael Jelenic, known for their work on Teen Titans Go!, and with a screenplay by Matthew Fogel, who has previously worked on The LEGO Movie 2: The Second Part and Illumination's Minions: The Rise of Gru, the film is set to release in North America on April 5, 2023, and in Japan on April 27, 2023.
-
-                    The star-studded cast includes Chris Pratt as Mario, Anya Taylor-Joy as Princess Peach, Charlie Day as Luigi, Jack Black as Bowser, Keegan-Michael Key as Toad, Seth Rogen as Donkey Kong, Fred Armisen as Cranky Kong, Kevin Michael Richardson as Kamek, and Sebastian Maniscalco as Spike. Produced by Illumination founder and CEO Chris Meledandri, along with Nintendo's Shigeru Miyamoto, the film will be co-financed by Universal Pictures and Nintendo, and will be released worldwide by Universal Pictures. Overall, it promises to be an exciting new addition to the Super Mario Bros franchise on the big screen. 1st time showing in North America is on April 5, 2023 and Japan on April 27, 2023. </p>
-                <li><a href="https://www.thesupermariobros.movie/">Saiba mais sobre o filme</a></li>
+                <p class="description">A new animated film based on the iconic world of Super Mario Bros is coming from Illumination and Nintendo. Directed by
+                Aaron Horvath and Michael Jelenic, known for their work on Teen Titans Go!, and with a screenplay by Matthew Fogel, who
+                has previously worked on The LEGO Movie 2: The Second Part and Illumination's Minions: The Rise of Gru, the film is set
+                to release in North America on April 5, 2023, and in Japan on April 27, 2023.
+                
+                The star-studded cast includes Chris Pratt as Mario, Anya Taylor-Joy as Princess Peach, Charlie Day as Luigi, Jack Black
+                as Bowser, Keegan-Michael Key as Toad, Seth Rogen as Donkey Kong, Fred Armisen as Cranky Kong, Kevin Michael Richardson
+                as Kamek, and Sebastian Maniscalco as Spike. Produced by Illumination founder and CEO Chris Meledandri, along with
+                Nintendo's Shigeru Miyamoto, the film will be co-financed by Universal Pictures and Nintendo, and will be released
+                worldwide by Universal Pictures. Overall, it promises to be an exciting new addition to the Super Mario Bros franchise
+                on the big screen. 1st time showing in North America is on April 5, 2023 and Japan on April 27, 2023. </p>
+                <button class="knowmore"><a href="https://www.thesupermariobros.movie/">More about the film</a></button>
             </div>
-                <img class="title-image" src="{{ url_for('static', filename='images/mario-party.png') }}"/>
         </main>
 
         <script src="{{ url_for('static', filename='script/js/index.js') }}"></script>

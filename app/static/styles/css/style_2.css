@@ -84,7 +84,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 200px 0;
+    padding: 120px 0;
     text-align: center;
   }
   
@@ -104,15 +104,19 @@ body {
   
   .container p.description {
     color: #a8adb7;
-    width: 85%;
+    text-align: center;
+    width: 100%;
     font-size: 16px;
     margin: 20px 0;
+    margin-bottom: 70px;
   }
   
-  .container li a {
+  .container a {
+    color: #ffffff;
+
+  }
+  .container .knowmore {
     background-color: #ed0c11;
-    text-decoration: none;
-    list-style: none;
     color: #ffffff;
     padding: 15px;
     font-size: 10px;
@@ -121,15 +125,10 @@ body {
     border-radius: 50px;
     border: none;
     text-transform: uppercase;
-    transition: 0.5s all ease-out;
-    position: absolute;
-    left: 50%;
-    margin-top: 20px;
-    transform: translate(-50%, -50%);
+    transition: 0.5s all ease-in-out;
 }
 
-
-.container li a:hover {
+.container .knowmore:hover {
     transform: scale(1.1)
 }
   
