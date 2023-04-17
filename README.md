@@ -1,5 +1,5 @@
 # Super Mario Bros. Movie Flask Application
-This is a Flask application that allows users to view two different pages. The home page displays information about the Super Mario Bros. movie and has a trailer button that opens a modal containing the movie trailer. The details page displays information about the movie release date and cast.
+This Flask application offers users two pages to explore. The first page, which serves as the home page, provides detailed information on the Super Mario Bros. movie, including a trailer button that opens a modal displaying the movie trailer. The second page, known as the details page, presents additional information about the movie, such as the release date and the cast.
 
 ## Getting started
 ### Prerequisites
